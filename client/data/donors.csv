@@ -1,0 +1,51 @@
+﻿donor_id;blood_type;organ_available;location;hospital;tissue_type;age;donation_date;organ_condition
+D0000;O+;Heart;Frankfurt;Frankfurt University Hospital;HLA-A1;31;2025-02-21;Fair
+D0001;AB-;Lung;Munich;Hamburg-Eppendorf University Hospital;HLA-A1;37;2025-02-08;Fair
+D0002;A+;Heart;Dortmund;Charité Hospital;HLA-DR2;41;2025-02-27;Excellent
+D0003;AB+;Kidney;Stuttgart;Frankfurt University Hospital;HLA-A2;59;2025-02-13;Excellent
+D0004;B+;Lung;Dortmund;Hamburg-Eppendorf University Hospital;HLA-DR1;32;2025-02-25;Fair
+D0005;B-;Pancreas;Stuttgart;University Hospital Munich;HLA-A2;53;2025-02-20;Fair
+D0006;B+;Lung;Berlin;Frankfurt University Hospital;HLA-DR2;39;2025-02-23;Good
+D0007;O+;Liver;Leipzig;Frankfurt University Hospital;HLA-DR2;34;2025-02-12;Excellent
+D0008;B+;Kidney;Leipzig;University Hospital Munich;HLA-DR2;61;2025-02-22;Fair
+D0009;A+;Kidney;Leipzig;Charité Hospital;HLA-DR1;18;2025-02-21;Good
+D0010;AB+;Heart;Essen;Charité Hospital;HLA-B7;33;2025-02-27;Good
+D0011;B-;Heart;Düsseldorf;University Hospital Cologne;HLA-B7;32;2025-03-05;Excellent
+D0012;O-;Liver;Dortmund;University Hospital Cologne;HLA-B7;42;2025-02-28;Excellent
+D0013;O+;Lung;Leipzig;Frankfurt University Hospital;HLA-B8;43;2025-02-10;Fair
+D0014;AB-;Lung;Berlin;Hamburg-Eppendorf University Hospital;HLA-B7;58;2025-02-17;Good
+D0015;O-;Liver;Munich;Frankfurt University Hospital;HLA-DR1;58;2025-03-07;Good
+D0016;AB-;Kidney;Frankfurt;University Hospital Cologne;HLA-DR1;28;2025-03-02;Excellent
+D0017;B-;Heart;Stuttgart;Charité Hospital;HLA-B8;31;2025-03-02;Fair
+D0018;B-;Pancreas;Leipzig;University Hospital Cologne;HLA-B7;46;2025-02-20;Excellent
+D0019;AB-;Kidney;Leipzig;Frankfurt University Hospital;HLA-DR2;24;2025-02-25;Fair
+D0020;A+;Pancreas;Essen;University Hospital Munich;HLA-B8;56;2025-02-07;Excellent
+D0021;O+;Pancreas;Essen;University Hospital Cologne;HLA-A2;53;2025-02-11;Excellent
+D0022;O-;Liver;Dortmund;University Hospital Cologne;HLA-B8;62;2025-03-01;Good
+D0023;A-;Liver;Hamburg;University Hospital Munich;HLA-DR2;64;2025-02-17;Excellent
+D0024;A+;Pancreas;Dortmund;University Hospital Munich;HLA-B8;38;2025-02-10;Fair
+D0025;B-;Pancreas;Düsseldorf;Hamburg-Eppendorf University Hospital;HLA-DR1;49;2025-02-08;Fair
+D0026;B-;Pancreas;Stuttgart;Frankfurt University Hospital;HLA-A2;20;2025-02-14;Good
+D0027;O-;Kidney;Cologne;Hamburg-Eppendorf University Hospital;HLA-A2;60;2025-03-06;Fair
+D0028;AB-;Pancreas;Frankfurt;Hamburg-Eppendorf University Hospital;HLA-DR1;22;2025-02-14;Excellent
+D0029;AB-;Liver;Cologne;University Hospital Munich;HLA-B7;39;2025-02-14;Fair
+D0030;AB-;Pancreas;Hamburg;University Hospital Cologne;HLA-A1;46;2025-02-26;Excellent
+D0031;B+;Kidney;Frankfurt;University Hospital Cologne;HLA-DR2;54;2025-03-02;Excellent
+D0032;A-;Liver;Berlin;University Hospital Cologne;HLA-B7;48;2025-03-09;Fair
+D0033;O+;Kidney;Stuttgart;Frankfurt University Hospital;HLA-A2;39;2025-02-15;Excellent
+D0034;A+;Lung;Leipzig;University Hospital Cologne;HLA-A1;59;2025-02-21;Excellent
+D0035;A+;Pancreas;Berlin;Charité Hospital;HLA-A1;40;2025-02-21;Good
+D0036;B-;Liver;Berlin;University Hospital Cologne;HLA-B8;33;2025-03-04;Excellent
+D0037;O-;Kidney;Dortmund;Charité Hospital;HLA-DR1;19;2025-02-10;Fair
+D0038;B-;Kidney;Cologne;Frankfurt University Hospital;HLA-A1;21;2025-02-19;Fair
+D0039;B+;Liver;Leipzig;Hamburg-Eppendorf University Hospital;HLA-B7;46;2025-02-19;Fair
+D0040;O-;Pancreas;Stuttgart;University Hospital Cologne;HLA-A1;22;2025-03-09;Excellent
+D0041;B+;Liver;Berlin;Hamburg-Eppendorf University Hospital;HLA-DR2;58;2025-03-07;Good
+D0042;A-;Pancreas;Hamburg;Hamburg-Eppendorf University Hospital;HLA-B7;60;2025-02-15;Fair
+D0043;A-;Kidney;Hamburg;Hamburg-Eppendorf University Hospital;HLA-B8;39;2025-02-16;Excellent
+D0044;O-;Pancreas;Leipzig;Frankfurt University Hospital;HLA-B7;52;2025-02-10;Fair
+D0045;O+;Heart;Cologne;University Hospital Cologne;HLA-DR2;34;2025-02-10;Fair
+D0046;AB+;Pancreas;Munich;Hamburg-Eppendorf University Hospital;HLA-B7;41;2025-03-08;Fair
+D0047;AB-;Pancreas;Cologne;University Hospital Munich;HLA-DR1;47;2025-02-24;Good
+D0048;O-;Liver;Hamburg;University Hospital Cologne;HLA-B7;38;2025-02-07;Good
+D0049;A+;Heart;Düsseldorf;University Hospital Munich;HLA-B7;25;2025-02-12;Good
