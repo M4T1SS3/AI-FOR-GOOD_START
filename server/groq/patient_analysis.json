@@ -1,0 +1,36 @@
+{
+  "match_analysis": {
+    "patient": {
+      "patient_id": "P0017",
+      "blood_type": "A+",
+      "organ_needed": "Heart",
+      "medical_urgency": "High",
+      "wait_time": "Not explicitly provided",
+      "location": "Stuttgart",
+      "hospital": "Hamburg-Eppendorf University Hospital",
+      "age": "N/A",
+      "medical_condition": "N/A",
+      "registration_date": "N/A"
+    },
+    "donor": {
+      "donor_id": "D0002",
+      "blood_type": "A+",
+      "organ_available": "Heart",
+      "location": "Dortmund",
+      "hospital": "Charit\u00e9 Hospital",
+      "tissue_type": "HLA-DR2",
+      "age": "N/A",
+      "donation_date": "2025-02-27",
+      "organ_condition": "Excellent"
+    },
+    "key_points": [
+      "Point 1: The patient's medical urgency is high, making a quick match essential.",
+      "Point 2: Donor D0002 has the same blood type as the patient (A+), which is a positive match.",
+      "Point 3: Although the HLA compatibility is not exact (HLA-DR2 instead of HLA-DR1), it still improves the chances of a successful transplant.",
+      "Point 4: The organ from Donor D0002 is in excellent condition, which is a significant advantage.",
+      "Point 5: The location of Donor D0002 in Dortmund is relatively close to the patient's location in Stuttgart, which will facilitate a faster transplant process."
+    ],
+    "compatibility_score": "80%",
+    "match_priority": "HIGH"
+  }
+}
