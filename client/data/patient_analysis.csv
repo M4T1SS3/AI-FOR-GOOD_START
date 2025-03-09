@@ -1,0 +1,2 @@
+patient_id,blood_type,organ_needed,medical_urgency,wait_time,location,hospital,age,justification
+P0033,AB+,Heart,Critical,142,Essen,University Hospital Munich,38,"P0033 is the most urgent patient with a critical medical condition and has the shortest wait time of 142 days. The patient's blood type and tissue type are also compatible with the available organ. Therefore, P0033 is the best match for immediate organ transplantation."
