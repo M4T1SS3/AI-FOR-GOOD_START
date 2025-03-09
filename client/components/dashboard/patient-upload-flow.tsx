@@ -209,6 +209,17 @@ const PatientUploadFlow = ({ onComplete, onCancel }: PatientUploadFlowProps) => 
               />
             </div>
             
+            <div className="space-y-2">
+              <Label htmlFor="justification">Medical Justification</Label>
+              <textarea 
+                id="justification" 
+                className="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                value={patientData.justification || ''} 
+                onChange={(e) => updatePatientField('justification', e.target.value)}
+                placeholder="Provide medical justification for the transplant request"
+              />
+            </div>
+            
             <div className="flex items-center space-x-2 pt-2">
               <Checkbox 
                 id="urgentStatus" 
@@ -305,6 +316,13 @@ const PatientUploadFlow = ({ onComplete, onCancel }: PatientUploadFlowProps) => 
                   <p className="font-medium">{patientData.transplantStatus}</p>
                 </div>
               </div>
+              
+              {patientData.justification && (
+                <div className="pt-2">
+                  <h4 className="font-medium mb-1">Medical Justification:</h4>
+                  <p className="text-sm border rounded-md p-2 bg-gray-50">{patientData.justification}</p>
+                </div>
+              )}
               
               <div className="pt-2">
                 <h4 className="font-medium mb-2">Documents</h4>

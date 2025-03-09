@@ -18,7 +18,7 @@ interface PatientDonorMatchingProps {
 }
 
 interface DonorWithScore extends Donor {
-  compatibilityScore: number; // Make compatibilityScore required in this component
+  compatibilityScore: number;
 }
 
 const PatientDonorMatching = ({ patients, selectedPatient }: PatientDonorMatchingProps) => {
@@ -47,28 +47,28 @@ const PatientDonorMatching = ({ patients, selectedPatient }: PatientDonorMatchin
     
     const matches = donorMockData
       .filter(donor => {
-        // Basic compatibility criteria
-        if (donor.bloodType !== patient.bloodType) return false;
-        if (donor.organAvailable !== patient.organNeeded) return false;
+        // Basic compatibility criteria - match using snake_case properties from the Donor interface
+        if (donor.blood_type !== patient.bloodType) return false;
+        if (donor.organ_available !== patient.organNeeded) return false;
         
         // Calculate compatibility score
         let score = 100;
         
-        // Age difference impacts score
-        const donorAge = new Date().getFullYear() - new Date(donor.dob).getFullYear();
+        // Age difference impacts score - use age directly from Donor interface
+        const donorAge = donor.age;
         const patientAge = new Date().getFullYear() - new Date(patient.dob).getFullYear();
         const ageDiff = Math.abs(donorAge - patientAge);
         if (ageDiff > 20) score -= 20;
         else if (ageDiff > 10) score -= 10;
         
-        // HLA matching impacts score
-        if (donor.hlaTyping !== patient.hlaTyping) score -= 30;
+        // HLA matching impacts score - compare tissue_type with hlaTyping
+        if (donor.tissue_type !== patient.hlaTyping) score -= 30;
         
         // Geographic distance impacts score (simulated)
         score -= Math.floor(Math.random() * 15);
         
-        // Donor status impacts score
-        if (donor.status !== 'Active') score -= 40;
+        // Donor organ condition impacts score
+        if (donor.organ_condition !== 'Excellent') score -= 20;
         
         // Assign compatibility score to donor
         const donorWithScore = donor as DonorWithScore;
@@ -164,8 +164,8 @@ const PatientDonorMatching = ({ patients, selectedPatient }: PatientDonorMatchin
                 <TableHeader>
                   <TableRow>
                     <TableHead>Donor ID</TableHead>
-                    <TableHead>Name</TableHead>
                     <TableHead>Location</TableHead>
+                    <TableHead>Hospital</TableHead>
                     <TableHead>Blood Type</TableHead>
                     <TableHead>Organ</TableHead>
                     <TableHead>Compatibility</TableHead>
@@ -174,12 +174,12 @@ const PatientDonorMatching = ({ patients, selectedPatient }: PatientDonorMatchin
                 </TableHeader>
                 <TableBody>
                   {matchResults.map((donor) => (
-                    <TableRow key={donor.id}>
-                      <TableCell className="font-medium">{donor.id}</TableCell>
-                      <TableCell>{donor.name}</TableCell>
+                    <TableRow key={donor.donor_id}>
+                      <TableCell className="font-medium">{donor.donor_id}</TableCell>
                       <TableCell>{donor.location}</TableCell>
-                      <TableCell>{donor.bloodType}</TableCell>
-                      <TableCell>{donor.organAvailable}</TableCell>
+                      <TableCell>{donor.hospital}</TableCell>
+                      <TableCell>{donor.blood_type}</TableCell>
+                      <TableCell>{donor.organ_available}</TableCell>
                       <TableCell>
                         <div className="flex items-center space-x-2">
                           <div className={`font-medium ${getScoreColor(donor.compatibilityScore)}`}>

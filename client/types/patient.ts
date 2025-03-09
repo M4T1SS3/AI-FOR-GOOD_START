@@ -20,4 +20,6 @@ export interface Patient {
   consentSigned: boolean;
   lastReviewDate: string;
   documents: PatientDocuments;
+  justification?: string;
+
 }
